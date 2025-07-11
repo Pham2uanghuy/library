@@ -9,7 +9,7 @@ A basic library management web application built using **Spring Boot** for the b
 - **Backend:** Spring Boot (Java)
 - **Frontend:** HTML, CSS
 - **Build Tool:** Maven
-- **Database:** H2 (in-memory, for testing purposes)
+- **Database:** PostgreSQL
 
 ---
 

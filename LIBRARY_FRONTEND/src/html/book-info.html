@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book infor</title>
+</head>
+
+<body>
+    <h1>Book infor: <span id="bookTitleAndAuthor"></span></h1> <!--insrt title and author-->
+
+    <form>
+        <table>
+            <tr>
+                <td>ISBN:</td>
+                <td id="isbn"> </td>
+            </tr>
+            <tr>
+                <td>Publisher:</td>
+                <td id="publisher"> </td>
+            </tr>
+            <tr>
+                <td>Year of Publication:</td>
+                <td id="yearPublished"> </td>
+            </tr>
+            <tr>
+                <td>Place of Publication:</td>
+                <td id="placePublished"> </td>
+            </tr>
+            <tr>
+                <td>Currently Available:</td>
+                <td id="noOfAvailableCopies"> </td>
+            </tr>
+        </table>
+    </form>
+    <!--display list of checkout book-->
+    <h2>Checked out Books:</h2>
+    <div>list of books...</div> <!--fetch from db-->
+    <br><br>
+    <script src="../assests/scripts/inforBook.js"></script>
+    <a id="checkoutLink" href="book-checkout.html">Checkout his book</a>
+    <a id="currentHoldersLink" href="#">Current Holders</a>
+    <a href="book-history.html">Checkout History</a>
+
+    <div id="currentHoldersContainer"></div>
+    <br><br>
+    <a id="editBookLink" href="edit-book.html">Edit book</a>
+    <a id="removeCopyLink" href="#">Remove a copy</a>
+    <a id="addCopyLink" href="#">Add a copy</a>
+    <br><br>
+    <a href="home.html">Back to Home</a>
+    <a href="javascript:history.back()">Back to previous page</a>
+</body>
+
+</html>

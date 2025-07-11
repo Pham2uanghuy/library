@@ -1,0 +1,630 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+IoT và ỨNG DỤNG
+CHƯƠNG 2: CÁC THIẾT BỊ IoT VÀ CÔNG NGHỆ 
+HỖ TRỢ
+1. Các thiết bị IoT
+2. Mạng cảm biến vô tuyến (WSN)
+3. Các thiết bị nhúng (Embeded Devices)
+4. Tính toán đám mây (Cloud Computing)
+5. Phân tích dữ liệu lớn (Big Data Analytics)
+6. Một số nền tảng CNTT hỗ trợ IoT
+7. Bài tậ
+2.1 Các thiết bị IoT
+❖Thiết bị vật lý trong IoT
+▪ “Things” trong “Internet of things” có thể là bất kỳ đối
+tượng nào với định danh duy nhất có thể gửi/nhận dữ
+liệu thông qua một mạng (e.g., các loại cảm biến, điện
+thoại thông minh, TV thông minh, máy tính, tủ lạnh, ô tô,
+vv..).
+▪ Các thiết bị IoT được kết nối với Internet và gửi đi những
+thông tin về bản thân chúng cũng như môi trường xung
+quanh chúng qua mạng, tới các thiết bị IoT khác hoặc tới
+máy chủ, hoặc các kho lưu trữ dữ liệu.
+▪ Ví dụ: Một thiết bị trong nhà thông minh có thể cho phép giám sát từ
+xa trạng thái của các thiết bị gia dụng và điều khiển chúng
+2.1 Các thiết bị IoT
+❖Các khối chức năng cơ bản của một thiết bị IoT
+Một thiết bị IoT có thể bao gồm một số module dựa
+trên các chức năng:
+- Cảm nhận (Sensing)
+- Hành động (Actuation)
+- Trao đổi thông tin (Communication)
+- Phân tích và xử lý dữ liệu (Analysis & Processsing
+2.1 Các thiết bị IoT
+Sơ đồ khối của một thiết bị Io
+2.1 Các thiết bị IoT
+➢ Cảm nhận (Sensing)
+Chức năng này được thực hiện bởi các cảm biến (Sensor).
+Các cảm biến có thể nằm trên chính bảng mạch của thiết bị
+IoT hoặc được gắn với thiết bị. Các thiết bị IoT có thể thu
+thập rất nhiều kiểu thông tin từ các cảm biến.
+Ví dụ: nhiệt độ, độ ẩm, ánh sáng, khói bụi, âm thanh,… v
+2.1 Các thiết bị IoT
+➢ Trao đổi thông tin (Communication)
+Module trao đổi thông tin đáp ứng với các yêu cầu gửi dữ
+liệu thu thập được tới một thiết bị khác hoặc lên các dịch
+vụ, kho lưu trữ trên đám mây. Nó cũng thu nhận thông tin
+từ các thiết bị khác và các lệnh tới từ các ứng dụng từ xa.
+➢ Phân tích và xử lý dữ liệu (Analysis & Processsing)
+Module phân tích và xử lý dữ liệu có trách nhiệm làm cho
+các dữ liệu thu thập được từ cảm biến trở nên có ý nghĩa và
+hữu dụng 
+2.1 Các thiết bị IoT
+➢ Định nghĩa cảm biến (Sensor)
+Cảm biến là thiết bị điện tử cảm nhận những trạng
+thái hay quá trình vật lý, hóa học hay sinh học của môi trường
+cần khảo sát, và biến đổi thành tín hiệu điện để thu thập thông
+tin về trạng thái hay quá trình đó
+2.1 Các thiết bị IoT
+- Thông tin được xử lý để rút ra tham số định tính
+hoặc định lượng của môi trường, phục vụ các nhu
+cầu nghiên cứu khoa học kỹ thuật hay dân sinh và gọi
+ngắn gọn là đo đạc, phục vụ trong truyền và xử
+lý thông tin, hay trong điều khiển các quá trình khác.
+- Cảm biến thường được đặt trong các vỏ bảo vệ tạo
+thành đầu thu hay đầu dò (Test probe), có thể có kèm
+các mạch điện hỗ trợ, và nhiều khi trọn bộ đó lại được
+gọi luôn là "cảm biến".
+2.1 Các thiết bị IoT
+Một số loại cảm biến thông dụng trong IoT
+2.1 Các thiết bị IoT
+➢ Phân loại cảm biến
+Phân loại dựa trên loại đại lượng cảm nhận !
+▪ Cảm biến vật lý: sóng điện từ, ánh sáng, tử ngoại, hồng
+ngoại, tia X, tia gamma, hạt bức xạ, nhiệt độ, áp suất, âm
+thanh, rung động, khoảng cách, chuyển động, gia tốc, từ
+trường, trọng trường,...
+▪ Cảm biến hóa học: độ ẩm, độ PH, các ion, hợp chất đặc
+hiệu, khói,...
+▪ Cảm biến sinh học: đường glucose huyết, DNA/RNA,
+protein đặc hiệu cho các loại bệnh trong máu, vi khuẩn, vi
+rút...
+2.1 Các thiết bị IoT
+➢ Phân loại cảm biến
+Phân loại theo nguồn năng lượng dùng cho phép biến đổi lấy
+từ đâu !
+Cảm biến chủ động có sử dụng điện năng bổ sung để
+chuyển sang tín hiệu điện. Điển hình là cảm biến áp điện làm
+bằng vật liệu gốm, chuyển áp suất thành điện tích trên bề mặt.
+Các antenna cũng thuộc kiểu cảm biến chủ động.
+Cảm biến bị động không sử dụng điện năng bổ sung
+để chuyển sang tín hiệu điện. Điển hình là các photodiode khi
+có ánh sáng chiếu vào thì có thay đổi của điện trở tiếp giáp
+bán dẫn p-n được phân cực ngược. Các cảm biến bằng biến
+trở cũng thuộc kiểu cảm biến bị động.
+2.1 Các thiết bị IoT
+➢ Phân loại cảm biến 
+Phân loại theo nguyên lý hoạt động !
+❖ Cảm biến điện trở: Hoạt động dựa theo di chuyển con chạy hoặc góc
+quay của biến trở, hoặc sự thay đổi điện trở do co giãn vật dẫn.
+❖ Cảm biến cảm ứng:
+▪ Cảm biến biến áp vi phân: Cảm biến vị trí (Linear variable differential
+transformer, LVDT)
+▪ Cảm biến cảm ứng điện từ: các antenna
+▪ Cảm biến dòng xoáy: Các đầu dò của máy dò khuyết tật trong kim
+loại, của máy dò mìn.
+▪ Cảm biến cảm ứng điện động: chuyển đổi chuyển động sang điện
+như microphone điện động, đầu thu sóng địa chấn trên bộ
+(Geophone).
+2.1 Các thiết bị IoT
+➢ Phân loại cảm biến 
+Phân loại theo nguyên lý hoạt động !
+❖ Cảm biến điện dung: Sự thay đổi điện dung của cảm biến khi khoảng
+cách hay góc đến vật thể kim loại thay đổi.
+❖ Cảm biến điện trường (FET): Sự thay đổi của điện trường ngoài dẩn
+đến sự thay đổi của cường độ dòng điện bên trong cảm biến.
+❖ Cảm biến từ giảo (magnetoelastic): ít dùng.
+❖ Cảm biến từ trường: Cảm biến hiệu ứng Hall, cảm biến từ trường dùng
+vật liệu sắt từ,... dùng trong từ kế.
+❖ Cảm biến áp điện: Chuyển đổi áp suất sang điện dùng gốm áp
+điện như titanat bari, trong các microphone thu âm, hay ở đầu thu sóng
+địa chấn trong nước (Hydrophone) như trong các máy Sonar.
+2.1 Các thiết bị IoT
+➢ Phân loại cảm biến 
+Phân loại theo nguyên lý hoạt động !
+❖ Cảm biến quang: Các cảm biến ảnh loại CMOS hay cảm biến
+CCD trong camera, các photodiode ở các vùng phổ khác nhau dùng
+trong nhiều lĩnh vực. Ví dụ: đầu dò giấy trong khay của máy in làm
+bằng photodiode.
+❖ Cảm biến huỳnh quang, nhấp nháy: Sử dụng các chất phát quang thứ
+cấp để phát hiện các bức xạ năng lượng cao hơn, như các tấm kẽm
+sulfide.
+❖ Cảm biến điện hóa: Các đầu dò ion, độ pH,...
+❖ Cảm biến nhiệt độ: Cặp lưỡng kim, hoặc dạng linh kiện bán dẫn
+như Precision Temperatur Sensor LM335 có hệ số 10 mV/°K.
+2.1 Các thiết bị IoT
+➢ Một số đặc trưng của các cảm biến
+❖ Độ nhạy: Gia số nhỏ nhất có thể phát hiện.
+❖ Mức tuyến tính: Khoảng giá trị được biến đổi có hệ số biến đổi cố định.
+❖ Dải biến đổi: Khoảng giá trị biến đổi sử dụng được.
+❖ Ảnh hưởng ngược: Khả năng gây thay đổi môi trường.
+❖ Mức nhiễu : Mức nhiễu riêng (noise) và ảnh hưởng của tác nhân khác
+lên kết quả.
+❖ Sai số xác định: Phụ thuộc độ nhạy và mức nhiễu.
+❖ Độ trôi: Sự thay đổi tham số theo thời gian phục vụ hoặc thời gian tồn tại
+❖ Độ trễ: Mức độ đáp ứng với thay đổi của quá trình.
+❖ Độ tin cậy: Khả năng làm việc ổn định, chịu những biến động lớn của
+môi trường như sốc các loại.
+❖ Điều kiện môi trường: Dải nhiệt độ, độ ẩm, áp suất,... làm việc được.
+2.1 Các thiết bị IoT
+➢ Một số đặc trưng của các cảm biến
+❖ Độ nhạy: Gia số nhỏ nhất có thể phát hiện.
+❖ Mức tuyến tính: Khoảng giá trị được biến đổi có hệ số biến đổi cố định.
+❖ Dải biến đổi: Khoảng giá trị biến đổi sử dụng được.
+❖ Ảnh hưởng ngược: Khả năng gây thay đổi môi trường.
+❖ Mức nhiễu : Mức nhiễu riêng (noise) và ảnh hưởng của tác nhân khác
+lên kết quả.
+❖ Sai số xác định: Phụ thuộc độ nhạy và mức nhiễu.
+❖ Độ trôi: Sự thay đổi tham số theo thời gian phục vụ hoặc thời gian tồn tại
+❖ Độ trễ: Mức độ đáp ứng với thay đổi của quá trình.
+❖ Độ tin cậy: Khả năng làm việc ổn định, chịu những biến động lớn của
+môi trường như sốc các loại.
+❖ Điều kiện môi trường: Dải nhiệt độ, độ ẩm, áp suất,... làm việc được.
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+Đại lượng vật lý cần đo
+Một vật liệu hoặc cấu 
+trúc phản ứng với hiện 
+tượng vật lý
+Mạch điện chuyển đổi 
+các phản ứng này thành 
+các đại lượng điện đo 
+được (VD: điện áp, dòng 
+điện…)
+phiên dịch tín hiệu và lưu 
+trữ dữ liệu
+SENSOR
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+Air flow
+Dao động điện tỷ 
+lệ với tốc độ/thể 
+tích của luồng 
+không khí
+Ánh xạ
+10 Miles per hour
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+Nhiệt độ - Temperature
+Cặp nhiệt điện
+Thermo-couple
+Time
+Time
+Mapping
+At time t
+40° F
+(đại lượng vô 
+hướng scalar)
+Voltage
+Temp.
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+X
+Y
+Global coordinate system
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+X
+Y
+Hệ tọa độ
+Coordinate system
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+X
+Y
+Hệ tọa độ
+Coordinate system
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+Fundamental principle of sensors Scalar and vector output Coordinate system
+Hệ tọa độ địa phương
+Local coordinate system
+Coordinate system
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+Fundamental principle of sensors Scalar and vector output Coordinate system
+Hệ tọa độ địa phương
+Local coordinate system
+Coordinate system
+X
+Y
+Vx
+Vy
+Coordinate system
+Dữ liệu ra tại thời điểm t 
+[Vx (t), Vy
+(t)]
+Đối với cảm biến 2 trục x-y
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+Hệ tọa độ địa phương
+Local coordinate system
+X
+Y
+Vx
+Vy
+Dữ liệu ra tại thời điểm t 
+[Vx (t), Vy
+(t), Vz
+(t)]
+Đối với cảm biến 3 trục XYZ
+Z
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+Bắc
+Đông Hệ tọa độ toàn cầu
+Hệ tọa độ địa phương
+X
+Y
+Z
+2.1 Các thiết bị IoT
+➢ Dữ liệu ra của cảm biến là vector hay vô hướng 
+Time
+Scalar
+Vector
+Time
+Sensor
+Dữ liệu tại thời điểm t 
+<Vx
+(t), Vy
+(t), Vz
+(t)>
+Sensor data Sensor data
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+✓ Sound sensor (cảm biến âm thanh)
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+✓ Gas sensor (cảm biến khí gas)
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+✓ Light sensor (cảm biến ánh sáng)
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+✓ Temperature sensor (cảm biến nhiệt độ)
+Circuit 
+sensitive to 
+capacitance 
+change
+Voltage signal
+2.1 Các thiết bị IoT
+➢ Nguyên lý hoạt động cơ bản của cảm biến
+✓ Temperature sensor (cảm biến nhiệt độ)
+MEMS (Micro-Electro Mechanical Systems)
+2.1 Các thiết bị IoT
+➢ Một số cảm biến IoT thông dụng
+❖ Cảm biến nhiệt độ, độ ẩm DHT11
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến nhiệt độ, độ ẩm DHT11
+- Nguồn: 3 -> 5 VDC.
+- Dòng sử dụng: 2.5mA max (khi truyền dữ liệu).
+- Đo tốt ở độ ẩm 20-80%RH với sai số 5%.
+- Đo tốt ở nhiệt độ 0 to 50°C sai số ±2°C.
+- Tần số lấy mẫu tối đa 1Hz (1 giây 1 lần)
+- Kích thước 15mm x 12mm x 5.5mm.
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến nhiệt độ, độ ẩm DHT11
+Sơ đồ kết nối với vi điều khiển
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến nhiệt độ, độ ẩm DHT11
+Sơ đồ kết nối DHT11 với KIT Arduino UNO 
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến âm thanh
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến ánh sáng
+2.1 Các thiết bị IoT
+➢ Một số cảm biến
+❖ Cảm biến siêu âm
+2.2 Mạng cảm biến vô tuyến (WSN)
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Định nghĩa mạng cảm biến vô tuyến
+▪ Mạng cảm biến vô tuyến (WSN) là một mạng tự cấu hình
+gồm các nút (nodes) cảm biến nhỏ (còn gọi là motes)
+giao tiếp giữa các node bằng cách sử dụng tín hiệu vô
+tuyến và thường được triển khai với số lượng lớn để cảm
+nhận thế giới vật chất.
+▪ Các nút cảm biến về bản chất là những máy tính nhỏ với
+chức năng cực kỳ cơ bản. Chúng bao gồm một đơn vị xử
+lý với sức mạnh tính toán hạn chế và bộ nhớ hạn chế,
+thiết bị liên lạc vô tuyến, nguồn điện và một hoặc nhiều
+cảm biến.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Đặc trưng kỹ thuật của WSN
+▪ Mạng vô tuyến (Wireless Network)
+• Các nút giao tiếp với nhau qua sóng radio để trao đổi và xử lý dữ
+liệu được thu thập bởi các cảm biến của chúng. Trong một số
+trường hợp, họ có thể sử dụng các nút khác làm trung gian
+chuyển tiếp, trong trường hợp này mạng được gọi là multi-hop.
+Nếu các nút chỉ giao tiếp trực tiếp với nhau hoặc với gateway,
+mạng được coi là single-hop.
+• Kết nối không dây cho phép truy xuất dữ liệu trong thời gian thực
+từ những vị trí khó tiếp cận. Nó làm giảm chi phí lắp đặt: người ta
+ước tính rằng công nghệ không dây có thể loại bỏ tới 80% chi phí
+này.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Đặc trưng kỹ thuật của WSN
+▪ Tự tổ chức (Self-Organization)
+• Các nút tự tổ chức thành một mạng đặc biệt, có nghĩa là chúng
+không cần bất kỳ cơ sở hạ tầng có sẵn nào. Trong WSN, mỗi
+node được lập trình để hoạt động và tự khám phá về node lân
+cận của nó, để nhận ra đâu là các node mà nó có thể “trao đổi
+thông tin qua sóng radio.
+• Khả năng tổ chức một cách tự phát trong một mạng làm cho
+chúng dễ dàng triển khai, mở rộng và bảo trì, cũng như có khả
+năng chống chọi khi xảy ra lỗi tại một node trong mạng.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Đặc trưng kỹ thuật của WSN
+▪ Công suất thấp (Low Power)
+• WSN có thể được sử dụng ở những nơi xa xôi hẻo lánh, nơi
+không có sẵn nguồn điện. Do đó, WSN phải dựa vào năng lượng
+do pin cung cấp hoặc thu được bằng các kỹ thuật thu năng lượng
+như tấm pin mặt trời.
+• Để có thể hoạt động thời gian dài, các node phải sử dụng bộ vi
+xử lý và phát sóng vô tuyến công suất thấp, đồng thời thực hiện
+các kế hoạch tiết kiệm điện. Bộ xử lý phải chuyển sang chế độ
+ngủ càng lâu càng tốt và các thiết bị, phương tiện để truy cập
+thông tin của mạng phải được thiết kế phù hợp. Nhờ các kỹ thuật
+này, WSN cho phép triển khai lâu dài ở các vị trí xa.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Kiến trúc và nguyên tắc hoạt động
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Kiến trúc và nguyên tắc hoạt động
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Một số ứng dụng nổi bật của WSN
+▪ Theo dõi sự di chuyển của động vật (Tracking the
+movement of animal).
+▪ Phát hiện cháy rừng (Forest fire detection)
+▪ Phát hiện ngập lụt (Flood detection)
+▪ Nghiên cứu địa vật lý (Geophysical research)
+▪ Ứng dụng trong nông nghiệp (Smart farm)
+▪ Dự đoán thời gian bảo trì thiết bị (Predictive
+Maintenance)
+▪ Chăm sóc sức khỏe (Health Care)
+2.3 Các thiết bị nhúng (Embeded devices)
+❖KIT Arduino ESP32
+KIT ESP 32 Wemos D1 R32
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖Đặc trưng kỹ thuật của ESP32 WeMOS D1 R32
+• Nguồn nuôi 5Vdc qua cổng USB. Nguồn nuôi 5÷12Vdc qua
+giắc cấp nguồn DC tròn hoặc chân Vin.
+• Nhân xử lý trung tâm: Wireless Module – ESP-WROOM-32
+dựa trên Espressif ESP32 dual core Tensilica LX6 processor
+with 802.11 b/g/n WiFi and Bluetooth 4.2 LE.
+• Tần số hoạt động lên tới 240Mhz.
+• Chip lõi bao gồm 49 chân với 32 chân cắm vào/ra đầy đủ,
+thiết kế chuẩn chân cắm GPIO và kích thước tương tự KIT
+Arduino Uno. Tích hợp mạch nạp và giao tiếp UART CH340.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖ Đặc trưng kỹ thuật của ESP32 WeMOS D1 R32
+• Bộ nhớ trong 448 KBytes ROM cho booting và các tính năng
+của lõi chip. 520 KBytes SRAM trên chip dùng cho dữ liệu
+và các lệnh. 8 KBytes SRAM trong RTC (gọi là RTC SLOW
+Memory) để truy xuất bởi các bộ đồng xử lý co-processor.
+- 8 KBytes SRAM trong RTC (gọi là RTC FAST Memory) dùng
+cho lữu dữ liệu, truy xuất bởi CPU khi RTC đang boot từ chế
+độ Deep-sleep.
+- 1 Kbit EFUSE, với 256 bit cho hệ thống (địa chỉ MAC và cấu
+hình chip), 768 còn lại cho ứng dụng người dùng, gồm cả
+mã hóa bộ nhớ Flash và định ID cho chip.
+2.2 Mạng cảm biến vô tuyến (WSN)
+❖ Đặc trưng kỹ thuật của ESP32 WeMOS D1 R32
+- Bus hỗ trợ mang CAN 2.0
+- Giao tiếp ngoại vi: 
+Bộ chuyển đổi ADC 12 bit, 16 kênh.
+Bộ chuyển đổi 8-bits DAC: 2 kênh.
+10 chân để giao tiếp với cảm biến chạm (touch sensor).
+IR (TX/RX)
+Ngõ ra PWM cho điều khiển Motor, LED PWM: 16 kênh.
+Cảm biến Hall tích hợp sẵn. Cảm biến nhiệt độ tích hợp 
+sẵn. 4 cổng giao tiếp SPI. 2 cổng giao tiếp I²S. 2 cổng 
+giao tiếp I²C. 3 cổng giao tiếp UART.
+2.3 Các thiết bị nhúng (Embeded devices)
+❖Máy tính nhúng Rasberry Pi 3
+2.3 Các thiết bị nhúng (Embeded devices)
+❖Đặc trưng kỹ thuật của Rasberry Pi
+▪ Máy tính Raspberry Pi là board mạch Mini Computer
+được sử dụng nhiều nhất hiện nay, ngoài việc sử dụng
+như một máy tính bình thường chạy hệ điều hành Linux
+hoặc Windows 10 IoT,
+▪ Có khả năng xuất tín hiệu ra 40 chân GPIO giúp giao tiếp
+và điểu khiển vô số các board mạch và cảm biến bên
+ngoài để thực hiện vô số các ứng dụng khác nhau.
+2.3 Các thiết bị nhúng (Embeded devices)
+❖Đặc trưng kỹ thuật của Rasberry Pi 3
+▪ 1.2GHz 64-bit quad-core ARM Cortex-A53 CPU (BCM2837)
+▪ 1GB RAM (LPDDR2 SDRAM)
+▪ On-board Wireless LAN - 2.4 GHz 802.11 b/g/n (BCM43438)
+▪ On-board Bluetooth 4.1 + HS Low-energy (BLE) (BCM43438)
+▪ 4 x USB 2.0 ports
+▪ 10/100 Ethernet
+▪ 40 GPIO pins
+▪ Full size HDMI 1.3a port
+▪ Combined 3.5mm analog audio and composite video jack
+▪ Camera interface (CSI)
+▪ Display interface (DSI)
+▪ MmicroSD slot
+▪ VideoCore IV multimedia/3D graphics core @ 400MHz/300MHz
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ pcDuino
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ pcDuino
+▪ Single board mini-computer
+▪ ARM Cortex processor (A8, A10,..)
+▪ Chạy hệ điều hành Ununtu hoặc Android ICS
+▪ Giống như Rasberry Pi, nó có các giao tiếp HDMI, USB, 
+Ethernet, audio/video và các chân GPIO để giao tiếp với 
+bên ngoài.
+▪ Hỗ trợ các ngôn ngữ lập trình C, C++, JAVA và Python.
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ BeagleBone Black
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ Cubieboard
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ Cubieboard
+2.3 Các thiết bị nhúng (Embeded devices)
+❖ Các thiết bị nhúng khác
+2.4 Tính toán đám mây (Cloud Computing)
+Điện toán đám mây hay còn gọi là Cloud Computing, là mô 
+hình cung cấp các tài nguyên máy tính cho người dùng 
+thông qua internet.
+2.4 Tính toán đám mây (Cloud Computing)
+❖Có 4 mô hình điện toán đám mây
+▪ Public Cloud là mô hình triển khai điện toán đám
+mây sử dụng phổ biến nhất hiện nay. Các dịch vụ, ứng
+dụng trên Public Cloud đều nằm trên cùng một hệ thống
+Cloud. Tức là tất cả người dùng sẽ dùng chung tài
+nguyên. Nhà cung cấp dịch vụ sẽ trực tiếp quản lý và bảo
+vệ dữ liệu trên đám mây.
+▪ Private Cloud là dịch vụ điện toán đám mây riêng
+thường được cung cấp cho các doanh nghiệp để đảm
+bảo an toàn dữ liệu. Private cloud sẽ được bảo vệ bên
+trong tường lửa của công ty và doanh nghiệp trực tiếp
+quản lý.
+2.4 Tính toán đám mây (Cloud Computing)
+❖Có 4 mô hình điện toán đám mây
+▪ Đám mây lai (Hybrid Cloud) là sự kết hợp giữa đám
+mây công cộng và đám mây riêng. Nó cho phép người
+dùng khai thác được điểm mạnh của 2 mô hình trên. Và
+đồng thời hạn chế được điểm yếu của 2 mô hình đó.
+▪ Đám mây cộng đồng (Community Cloud) được xây
+dựng nhằm mục đích chia sẻ hạ tầng, dữ liệu cho nhiều
+tổ chức, người dùng khác nhau. Ví dụ, các doanh nghiệp
+cùng hoạt động trong ngành giáo dục có thể chia sẻ
+chung một đám mây để trao đổi dữ liệu cho nhau.
+2.4 Tính toán đám mây (Cloud Computing)
+❖Các dịch vụ cung cấp bởi điện toán đám mây
+▪ Infrasructure as a service (Iaas) – Dịch vụ cơ sở hạ tầng
+✓ Iaas là mô hình dịch vụ pay-per-use (tức là trả tiền cho
+những gì sử dụng). Chi phí sử dụng dịch vụ này được tính
+dựa trên chức năng và lượng tài nguyên mà khách hàng
+dùng. Theo Amazon thì đây là mức độ cơ bản nhất của điện
+toán đám mây.
+✓ Nhà cung cấp dịch vụ Iaas sẽ bán cho khách hàng
+các server thiết bị mạng, bộ nhớ, CPU, storage (không gian
+lưu trữ), máy tính (có thể máy thật hoặc máy ảo, tùy nhu
+cầu),iết bị trung tâm dữ liệu và một số tính năng bảo
+vệ an ninh nâng cao.
+2.4 Tính toán đám mây (Cloud Computing)
+❖Các dịch vụ cung cấp bởi điện toán đám mây
+Platform as a service (Paas) – Dịch vụ nền tảng
+✓ Paas là mô hình dịch vụ giúp các developer có thể phát
+triển. Cho phép triển khai các ứng dụng, website trên đám
+mây. Paas về cơ bản cũng khá giống với Iaas nhưng cấp độ
+cao hơn.
+✓ Paas được thêm các công cụ phát triển doanh
+nghiệp thông minh (BI), middleware và nhiều tool khác.
+Với Paas, sẽ có một nền tảng (Platform) được cài đặt sẵn
+để phù hợp cho việc phát triển ứng dụng.
+2.4 Tính toán đám mây (Cloud Computing)
+❖Các dịch vụ cung cấp bởi điện toán đám mây
+Software as a service (Saas) – Dịch vụ phần mềm
+✓ Saas là một mô hình dịch vụ điện toán đám mây cao nhất hiện nay. Cho phép
+người dùng sử dụng được các ứng dụng dễ dàng trên nền tảng đám mây thông
+qua internet. Đơn giản hơn, Saas sẽ cung cấp phần mềm/ứng dụng chạy trên
+internet. Từ đó người dùng cuối (end-user) có thể sử dụng ngay. Nhà cung cấp
+dịch vụ Saas có thể lưu trữ trên server của họ. Hoặc cho phép người dùng tải
+xuống và vô hiệu hóa nó khi hết hạn.
+✓ Ví dụ điển hình cho mô hình dịch vụ này là Microsoft Office 365. Đôi khi các
+web email (Gmail, Outlook, Yahoo Mail,..) cũng dùng dịch vụ này. Đây đều là
+các sản phẩm hoàn chỉnh. Người dùng có thể sử dụng ngay lập tức mà không
+cần phải thiết lập server để quản lý. Tương tự, OneDrive, Dropbox cũng là mô
+hình điện toán đám mây kiểu Saas. Cácb (phần mềm) này cung cấp
+không gian lữu trữ cần thiết để có thể upload/download dữ liệu thông qua
+internet.
+2.5 Phân tích dữ liệu lớn (Big Data Analytics)
+❖ Big data được định nghĩa là tập hợp dữ liệu có dung lượng
+lớn, đa dạng, thay đổi nhanh theo thời gian, do vậy nên khó
+lưu trữ, quản lý và xử lý cũng như phân tích khi dùng các
+công cụ phân tích và xử lý dữ liệu truyền thống.
+❖ Việc phân tích dữ liệu lớn liên quan tới các bước như dọn
+dẹp, làm sạch dữ liệu (data cleansing), trộn dữ liệu (data
+munging or wrangling), xử lý dữ liệu (processing) và hiển thị
+dữ liệu trực quan.
+2.5 Phân tích dữ liệu lớn (Big Data Analytics)
+❖Một số ví dụ về Big data được tạo ra bởi hệ thống
+IoT được cho như sau:
+▪ Các dữ liệu của cảm biến được tạo ra bởi hệ thống IoT ví dụ như các
+trạm quan sát thời tiết.
+▪ Các dữ liệu thu thập được từ các cảm biến máy móc được nhúng
+các hệ thống năng lượng hay hệ thống máy móc công nghiệp nhằm
+giám sát sự hoạt động và tình trạng bên vững của máy.
+▪ Các dữ liệu theo dõi sức khỏe và thể chất được tạo ra từ các thiết bị
+IoT đeo trên người.
+▪ Dữ liệu thu được từ các cảm biến gắn trên các phương tiện giao
+thông.
+▪ Dữ liệu được tạo ra từ các kho hàng bán lẻ,..vvv
+2.5 Phân tích dữ liệu lớn (Big Data Analytics)
+❖Một số đặc trưng của Big data
+▪ Dung lượng (Volume): thường rất lớn, khó để lưu trữ,
+quản lý hay xử lý bằng các công cụ truyền thống.
+▪ Tốc độ biến đổi của dữ liệu (Velocity): Phụ thuộc vào
+cách dữ liệu biến đổi nhanh hay chậm và tần suất biến
+đổi ra sao. Với nghành CNTT, công nghiệp và các ngành
+khác hiện nay, dữ liệu được tạo ra với tốc độ rất nhanh.
+▪ Tính đa dạng của dữ liệu (Variety): Đề cập tới khuôn
+dạng của dữ liệu. Big data đến từ rất nhiều nguồn, có cấu
+trúc cũng như không có cấu trúc bao gồm văn bản, âm
+thanh, hình ảnh và cả các dữ liệu từ các cảm biến.
+2.6 Một số nền tảng CNTT hỗ trợ IoT
+▪ Python Web application Framework – Django
+▪ WAMP – AutoBahn for IoT
+▪ Xively Cloud for IoT
+▪ Amazone Web Services for IoT
+▪ SkyNET IoT Messaging Platform
+▪ Sử dụng KIT Arduino ESP32 WROOM đọc dữ liệu nhiệt
+độ, độ ẩm, áp suất từ cảm biến DHT11 sau đó dùng các
+lệnh GET, hoặc POST để đưa dữ liệu lên Thinkspeaks.
+Vẽ biểu đồ thể hiện dữ liệu thay đổi theo thời gian của
+các đại lượng này
+▪ Sơ đồ khối hệ thống
+I2C
+ThingSpeak
+Temp - Humidity
+Môi trường Cảm biến
+Embeded Device
+Internet
+WiFi
+▪ Các thiết bị phần cứng
+• 1- KIT ESP32 WROOM WeMOS D1 R32
+• 2- Cảm biến DHT11 (nhiệt độ, độ ẩm)
+▪ Kết nối các thiết bị phần cứng
+▪ Các phần mềm CNTT
+• 1- Arduino IDE hoặc Visual Code hoặc phần mềm phát triển có
+hỗ trợ lập trình cho KIT ESP32 WROOM
+▪ Các phần mềm CNTT
+• 2- Nền tảng ThingSpeak tại địa chỉ https://thingspeak.com/
+- Thingspeak là một nền tảng mà người dùng có thể hiển
+thị dữ liệu trên Cloud.
+- Người dùng có thể truy cập để hiển thị hoặc lấy dữ liệu từ
+Cloud về thiết bị IoT thông qua giao thức HTTP.
+- ThingSpeak hoàn toàn miễn phí và giao diện đẹp nên có
+rất nhiều người dùng trên thế giới.
+- Thingspeak sử dụng API và có 1 key để định danh người
+sử dụng.
+- Không dùng cho các dự án IoT có tính bảo mật dữ liệu
+cao !
+❖Hoạt động của Thingspeak
+Tương tự như cách giao tiếp với các server khác,
+Thingspeak sử dụng API và có 1 key để định danh
+người sử dụng.
+-Đầu tiên đăng kí và đăng nhập
+vào https://thingspeak.com/
+-Vào Channels – My channels- New channels
+
+</body>
+</html>

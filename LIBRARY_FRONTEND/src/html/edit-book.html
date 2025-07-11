@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a book</title>
+</head>
+
+<body>
+    <h1>Edit a book #</h1> <!--insrt book number-->
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="title">Title:</td>
+                <td><input type="text" id="title" name="title"></td>
+            </tr>
+            <tr>
+                <td><label for="author">Author(s):</td>
+                <td><input type="text" id="author" name="author"></td>
+            </tr>
+            <tr>
+                <td><label for="isbn">ISBN:</td>
+                <td><input type="text" id="isbn" name="isbn"></td>
+            </tr>
+            <tr>
+                <td><label for="publisher">Publisher:</td>
+                <td><input type="text" id="publisher" name="publisher"></td>
+            </tr>
+            <tr>
+                <td><label for="yearPublished">Year of Publication:</td>
+                <td><input type="number" id="yearPublished" name="yearPublished"></td>
+            </tr>
+            <tr>
+                <td><label for="placePublished">Place of Publication:</td>
+                <td><input type="text" id="placePublished" name="placePublished"></td>
+            </tr>
+            <tr>
+                <td><label for="noOfAvailableCopies">No of availbale Copies:</td>
+                <td><input type="text" id="noOfAvailableCopies" name="noOfAvailableCopies"></td>
+            </tr>
+            <tr></tr>
+            <td><label for="barcodeNumber">Barcode:</td>
+            <td><input type="text" id="barcodeNumber" name="barcodeNumber"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td><!--empty cell for alignment--></td>
+                <td><input type="submit" value="Save changes"></td>
+            </tr>
+        </table>
+    </form>
+    <!-- list members from the database: card number, first_name, last_name-->
+    <br><br>
+    <a href="home.html">Back to Home</a>
+    <a href="javascript:history.back()">Back to previous page</a>
+</body>
+
+</html>
